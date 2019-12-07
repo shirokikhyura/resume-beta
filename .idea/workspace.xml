@@ -65,12 +65,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575723127762</updated>
-      <workItem from="1575723131591" duration="4133000" />
+      <workItem from="1575723131591" duration="4324000" />
     </task>
+    <task id="LOCAL-00001" summary="del node_models">
+      <created>1575727410670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575727410670</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="del node_models" />
+    <option name="LAST_COMMIT_MESSAGE" value="del node_models" />
   </component>
   <component name="WindowStateProjectService">
     <state x="585" y="116" width="1136" height="808" key="CommitChangelistDialog2" timestamp="1575727391782">
@@ -93,10 +107,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575723701918" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1575727153418">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1575727415165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575727153418" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575727415165" />
     <state x="926" y="253" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1575725958600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
