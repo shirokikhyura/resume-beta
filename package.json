@@ -1,7 +1,7 @@
 {
-  "name": "testjfe",
+  "name": "resume",
   "version": "1.0.0",
-  "description": "test jfe",
+  "description": "resume",
   "main": "main.js",
   "scripts": {
     "dev": "webpack --mode development --config webpack.dev.config.js --color",
@@ -51,8 +51,5 @@
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
     "webpack-merge": "^4.2.2"
-  },
-  "dependencies": {
-    "pngquant-bin": "^3.1.1"
   }
 }

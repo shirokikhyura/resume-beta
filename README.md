@@ -1,8 +1,8 @@
 # Инструкция
 
 Скачиваем архив или клонируем себе репозиторий <br />
-[скачать архив](https://github.com/VitaliyVorobey/testjfe/archive/master.zip)  <br />
-[git clone](https://github.com/VitaliyVorobey/testjfe.git) <br /> 
+[скачать архив](https://github.com/VitaliyVorobey/resume/archive/master.zip)  <br />
+[git clone](https://github.com/VitaliyVorobey/resume.git) <br /> 
 распаковать и перейтив в корень папки. <br />
 
 ## Установка пакетов
