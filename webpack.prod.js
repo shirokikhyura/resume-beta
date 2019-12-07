@@ -89,6 +89,7 @@ module.exports = merge(common, {
             orientation: "portrait",
             start_url: "/",
             version: "1.0",
+            prefix: 'icons/',
             logging: true,
             inject: true,
             persistentCache: true,
