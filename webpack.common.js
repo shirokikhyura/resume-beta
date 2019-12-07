@@ -141,6 +141,11 @@ module.exports = {
                     {loader: "sass-loader", options: {}},
                 ]
             },
+            {
+                test: /\.html$/,
+                include: path.resolve(__dirname, 'src/mockup'),
+                use: 'html-loader',
+            }
         ]
     },
     resolve: {
