@@ -12,8 +12,6 @@ module.exports = {
     entry: {
         main: ["@babel/polyfill", "./src/chunks/main.js"],
         main_critical: ["@babel/polyfill", "./src/chunks/main-critical.js"],
-
-
     },
 
     output: {
@@ -53,7 +51,6 @@ module.exports = {
                     // path.resolve(__dirname, 'node_modules/font-awesome/fonts')
 
                 ],
-                exclude: /(\/images)/,
                 use: [{
                     loader: 'file-loader',
                     options: {
@@ -143,13 +140,13 @@ module.exports = {
                 force: true
 
             },
-            {
-                from: './images/**/**.*',
-                to: './images/',
-                force: true
-
-
-            },
+            // {
+            //     from: './images/**/**.*',
+            //     to: './images/',
+            //     force: true
+            //
+            //
+            // },
         ]),
 
         new MiniCssExtractPlugin({
