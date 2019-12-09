@@ -1,0 +1,65 @@
+.navbar {
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  &-row{
+    display: flex;
+  }
+  &-logo {
+    img {
+      width: 194px;
+      height: 26px;
+    }
+    @media (min-width: 1200px) {
+      flex-grow: 1;
+      padding-top: 27px;
+      padding-bottom: 27px;
+    }
+    @media (max-width: 1199px) {
+      order: 2;
+    }
+  }
+  &-login {
+    &-btn {
+      color: $text-green;
+      font-size: 14px;
+      line-height: 1;
+      display: flex;
+      background: none;
+      border: none;
+      outline: none;
+      align-items: center;
+      .icon {
+        width: 15px;
+        height: 15px;
+        margin-right: 7.5px;
+      }
+    }
+    @media (max-width: 1199px) {
+      order: 1;
+    }
+  }
+  &-btn {
+    @media (min-width: 1200px) {
+      display: none;
+    }
+    order: 3;
+  }
+  &-menu {
+    padding-right: 36px;
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    display: flex;
+    a {
+      text-decoration: none;
+      color: #333;
+      &:hover, &:focus {
+        color: $text-green;
+      }
+    }
+    @media (max-width: 1199px) {
+      display: none;
+    }
+
+  }
+}
+
+

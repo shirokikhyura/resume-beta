@@ -72,10 +72,10 @@ module.exports = {
                             optipng: {
                                 optimizationLevel: 7,
                             },
-                            pngquant: {
-                                quality: [0.65, 0.90],
-                                speed: 4,
-                            },
+                            // pngquant: {
+                            //     quality: [0.65, 0.90],
+                            //     speed: 4,
+                            // },
                         },
                     },
                 ],

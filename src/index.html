@@ -7,12 +7,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume</title>
 
-<!--    в index.php удалить и добавить -->
+    <!--    в index.php удалить и добавить -->
     <link rel="stylesheet" href="/build/css/main_critical.css">
-<!--    <style> <?=file_get_contents(__DIR__ . "/../web/build/home_critical.css"); ?> </style>-->
+    <!--    <style> <?=file_get_contents(__DIR__ . "/../web/build/home_critical.css"); ?> </style>-->
 </head>
 <body>
+
+<div class="menu hidden">
+    <ul class="menu-list">
+        <li class="menu-list-title">Menu</li>
+        <li class="menu-list-item">
+            <button type="button" id="sub-menu-btn">Our services
+                <i class="icon icon-arrow-right"></i></button>
+            <span class="wrapper-sub-menu">
+                      <ul class="menu-list-sub">
+                    <li class="menu-list-sub-title"><button type="button" id="sub-menu-btn-back"><i
+                            class="icon icon-arrow-left"></i>Back</button></li>
+                    <li class="menu-list-sub-item"><a href="/resume_writing">Resume Writing<i
+                            class="icon icon-arrow-right"></i></a></li>
+                    <li class="menu-list-sub-item"><a href="/cv_writing">CV Writing<i class="icon icon-arrow-right"></i></a></li>
+                    <li class="menu-list-sub-item"><a href="/cover_letter">Cover Letter<i
+                            class="icon icon-arrow-right"></i></a></li>
+                    <li class="menu-list-sub-item"><a href="/writing_linkedin">Writing Linkedin<i
+                            class="icon icon-arrow-right"></i></a></li>
+                    <li class="menu-list-sub-item"><a href="/writing_our">Writing Our<i
+                            class="icon icon-arrow-right"></i></a></li>
+                    <li class="menu-list-sub-item"><a href="/packages">Packages<i class="icon icon-arrow-right"></i></a></li>
+                     </ul>
+                </span>
+        </li>
+        <li class="menu-list-item"><a href="/resume_examples">Resume Examples
+            <i class="icon icon-arrow-right"></i></a></li>
+        <li class="menu-list-item"><a href="/blog">Blog<i class="icon icon-arrow-right"></i></a></li>
+    </ul>
+</div>
+<div class="main-wrapper">
     <%= _.template(require('./mockup/nav.html'))(data) %>
+    <header>
+
+    </header>
     <%= _.template(require('./mockup/footer.html'))(data) %>
+</div>
+
+
 </body>
 </html>
