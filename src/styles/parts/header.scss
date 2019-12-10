@@ -3,11 +3,16 @@
     padding-bottom: 40px;
     position: relative;
     overflow-x: hidden;
+    @media (max-width: 1024px) {
+      padding-bottom: 92px;
+    }
     &:after, &:before {
       content: '';
       display: block;
       bottom: 0;
       position: absolute;
+      background-repeat: no-repeat;
+
     }
     &:after {
       background-image: url("#{$imgpath}header-image-left.svg");
@@ -15,6 +20,11 @@
       height: 128px;
       left: 50%;
       transform: translateX(-(279+153px));
+      @media (max-width: 1024px) {
+        width: 235px;
+        height: 109px;
+        transform: translateX(-(10+235px));
+      }
 
 
     }
@@ -22,8 +32,13 @@
       background-image: url("#{$imgpath}header-image-right.svg");
       width: 220px;
       height: 120px;
-      left: 50%;
+      right: 50%;
       transform: translateX((220+205px));
+      @media (max-width: 1024px) {
+        height: 107px;
+        width: 220px;
+        transform: translateX((220+30px));
+      }
     }
     &-title {
       font-family: $rufina;
@@ -33,14 +48,29 @@
       line-height: 68px;
       margin-top: 39px;
       margin-bottom: 19px;
+      @media (max-width: 1024px) {
+        font-size: 34px;
+        line-height: 42px;
+        margin-bottom: 21px;
+        margin-top: 36px;
+      }
     }
     &-sub-title {
       font-size: 19px;
       line-height: 26px;
       margin-bottom: 29px;
+      @media (max-width: 1024px) {
+        br {
+          display: none;
+        }
+      }
+
     }
     &-btn {
       margin-bottom: 48px;
+      @media (max-width: 1024px) {
+        padding-bottom: 38px;
+      }
       &-arrow {
         display: flex;
         flex-direction: column;
