@@ -133,21 +133,21 @@ module.exports = {
         }),
 
 
-        new CopyWebpackPlugin([
-            {
-                from: './images/**.*',
-                to: './images/',
-                force: true
-
-            },
-            // {
-            //     from: './images/**/**.*',
-            //     to: './images/',
-            //     force: true
-            //
-            //
-            // },
-        ]),
+        // new CopyWebpackPlugin([
+        //     {
+        //         from: './images/**.*',
+        //         to: './images/',
+        //         force: true
+        //
+        //     },
+        //     // {
+        //     //     from: './images/**/**.*',
+        //     //     to: './images/',
+        //     //     force: true
+        //     //
+        //     //
+        //     // },
+        // ]),
 
         new MiniCssExtractPlugin({
             filename: "css/[name].css",
