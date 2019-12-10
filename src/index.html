@@ -44,7 +44,18 @@
 <div class="main-wrapper">
     <%= _.template(require('./mockup/nav.html'))(data) %>
     <header>
-
+        <div class="header-home">
+            <div class="container text-center">
+                <div class="header-home-title">
+                    Professional Resume <br> Writing Services
+                </div>
+                <div class="header-home-sub-title">
+                    Thanks to our professional resume writing services online, you will never <br> have to worry about how to draft your resume.
+                </div>
+                <a href="/order" class="btn btn-primary header-home-btn btn-lg">Get Started Now <i class="icon icon-arrow-right-two"></i></a>
+                <button type="button" class="header-home-btn-arrow"><span></span><span></span></button>
+            </div>
+        </div>
     </header>
     <%= _.template(require('./mockup/footer.html'))(data) %>
 </div>

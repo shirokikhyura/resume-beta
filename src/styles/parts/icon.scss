@@ -2,44 +2,54 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
-.icon-login-btn {
-  background-image: url("#{$imgpath}Login.svg");
-}
-.icon-mob-menu {
-  background-image: url("#{$imgpath}icon-mob-menu.svg");
-  width: 20px;
-  height: 14px;
-  &-close {
-    background-image: url("#{$imgpath}icon-mob-menu-close.svg");
-    width: 16px;
-    height: 16px;
+  &-login-btn {
+    background-image: url("#{$imgpath}Login.svg");
+  }
+  &-mob-menu {
+    background-image: url("#{$imgpath}icon-mob-menu.svg");
+    width: 20px;
+    height: 14px;
+    &-close {
+      background-image: url("#{$imgpath}icon-mob-menu-close.svg");
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &-arrow {
+    &-right, &-left, &-down, &-up  {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+    }
+    &-right {
+      border-top: 1px solid $text-black;
+      border-right: 1px solid $text-black;
+      transform: rotate(45deg);
+      &-two {
+        background-image: url("#{$imgpath}right-arrow.svg");
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &-left {
+      border-top: 1px solid $text-black;
+      border-left: 1px solid $text-black;
+      transform: rotate(-45deg);
+
+    }
+    &-down {
+      border-top: 1px solid $text-black;
+      border-right: 1px solid $text-black;
+      transform: rotate(135deg);
+    }
+    &-up {
+      border-top: 1px solid $text-black;
+      border-right: 1px solid $text-black;
+      transform: rotate(-45deg);
+    }
+
   }
 }
-.icon-arrow {
-  &-right, &-left, &-down, &-up  {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-  }
-  &-right {
-    border-top: 1px solid $text-black;
-    border-right: 1px solid $text-black;
-    transform: rotate(45deg);
-  }
-  &-left {
-    border-top: 1px solid $text-black;
-    border-left: 1px solid $text-black;
-    transform: rotate(-45deg);
-  }
-  &-down {
-    border-top: 1px solid $text-black;
-    border-right: 1px solid $text-black;
-    transform: rotate(135deg);
-  }
-  &-up {
-    border-top: 1px solid $text-black;
-    border-right: 1px solid $text-black;
-    transform: rotate(-45deg);
-  }
-}
+
+
