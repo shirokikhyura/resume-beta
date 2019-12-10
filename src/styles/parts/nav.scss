@@ -116,6 +116,7 @@
     &:hover {
       .navbar-menu-sub {
         display: block;
+        z-index: 2;
       }
     }
   }

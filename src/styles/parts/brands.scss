@@ -1,0 +1,30 @@
+.brands {
+  background: #F0F6FB;
+  padding-top: 26px;
+  padding-bottom: 23px;
+  overflow-x: hidden;
+  @media (max-width: 1024px) {
+    padding-top: 24px;
+  }
+  &-title {
+    line-height: 21px;
+    @media (max-width: 1024px) {
+      font-size: 14px;
+    }
+  }
+  &-list {
+    display: flex;
+    width: 1115px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    &-item {
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      .icon {
+        display: inline-block;
+      }
+    }
+  }
+}

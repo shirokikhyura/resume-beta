@@ -50,6 +50,41 @@
     }
 
   }
+  &-walmart {
+    background-image: url("#{$imgpath}walmart.svg");
+    width: 141px;
+    height: 34px;
+  }
+  &-google {
+    background-image: url("#{$imgpath}google.svg");
+    width:  115.72px;
+    height:37.89px;
+
+  }
+  &-bbc {
+    background-image: url("#{$imgpath}bbc-2.svg");
+    width:  89px;
+    height: 27px;
+
+  }
+  &-fedex {
+    background-image: url("#{$imgpath}fedex-freight-5.svg");
+    width:  100px;
+    height: 36px;
+
+  }
+  &-amazon {
+    background-image: url("#{$imgpath}amazon.svg");
+    width:  105px;
+    height: 32px;
+
+  }
+  &-emirates {
+    background-image: url("#{$imgpath}fly-emirates.svg");
+    width:  115px;
+    height: 52px;
+
+  }
 }
 
 
