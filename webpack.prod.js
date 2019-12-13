@@ -71,7 +71,7 @@ module.exports = merge(common, {
         new HashedModuleIdsPlugin({
             hashFunction: 'sha256',
             hashDigest: 'hex',
-            hashDigestLength: 10,
+            hashDigestLength: 5,
         }),
         new ScriptExtphpWebpackPlugin({
             defaultAttribute: 'async'
