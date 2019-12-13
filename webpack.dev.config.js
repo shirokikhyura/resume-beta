@@ -62,7 +62,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 include: [
-
+                    path.resolve(__dirname, 'node_modules/owl.carousel/dist/owl.carousel.min.js'),
                     path.resolve(__dirname, 'src/'),
 
                 ],
@@ -84,7 +84,7 @@ module.exports = {
                 test: /\.(sa|sc|c)ss$/,
                 include: [
                     path.resolve(__dirname, 'src/styles'),
-                    // path.resolve(__dirname, 'node_modules/font-awesome/css')
+                    // path.resolve(__dirname, '/node_modules/owl.carousel/dist/assets/owl.carousel.min.css')
                 ],
                 use: [
                     MiniCssExtractPlugin.loader,
@@ -130,6 +130,11 @@ module.exports = {
             reload: true,
             server: { baseDir: ['web'] }
 
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
         }),
 
 

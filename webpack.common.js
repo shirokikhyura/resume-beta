@@ -39,6 +39,11 @@ module.exports = {
 
     plugins: [
         new ProgressBarPlugin(),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        }),
 
     ],
     module: {
@@ -99,6 +104,7 @@ module.exports = {
                 test: /\.js$/,
                 include: [
                     path.resolve(__dirname, 'src/'),
+                    path.resolve(__dirname, 'node_modules/owl.carousel/dist/owl.carousel.min.js'),
 
                 ],
                 use: {
@@ -118,7 +124,6 @@ module.exports = {
                 test: /\.(sa|sc|c)ss$/,
                 include: [
                     path.resolve(__dirname, 'src/styles'),
-                    // path.resolve(__dirname, 'node_modules/font-awesome/css')
                 ],
                 use: [
                     MiniCssExtractPlugin.loader,
