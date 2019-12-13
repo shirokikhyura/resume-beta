@@ -6,7 +6,6 @@ btnMenu.addEventListener('click', function () {
 
 $(document).ready(function(){
     $("#sliderBrands").owlCarousel({
-        margin: 70,
         loop: true,
         dots: false,
         nav: false,
@@ -19,8 +18,12 @@ $(document).ready(function(){
             },
             768:{
                 items:6,
-                responsiveClass: 'off',
+                margin: 70
 
+            },
+            1114: {
+                items:6,
+                margin: 0
             }
         }
 
