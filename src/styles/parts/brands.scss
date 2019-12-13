@@ -22,6 +22,11 @@
     .owl {
       &-stage {
         display: flex;
+        @media (min-width: 1115px) {
+          transform:none !important;
+          transition: none !important;
+          width: 100% !important;
+        }
         &-outer {
           width: 100%;
           overflow-x: hidden;
@@ -31,6 +36,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (min-width: 1115px) {
+          &.cloned {
+            display: none !important;
+          }
+        }
       }
       &-dots, &-nav {
         display: none;
@@ -39,16 +49,3 @@
   }
 }
 
-@media screen and (min-width: 1114px) {
-  .owl-item.cloned{
-    display: none !important;
-  }
-  .owl-stage{
-    transform:none !important;
-    transition: none !important;
-    width: auto !important;
-  }
-  .owl-item{
-    width: auto !important;
-  }
-}
