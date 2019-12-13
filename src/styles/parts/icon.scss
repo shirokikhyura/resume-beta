@@ -85,6 +85,15 @@
     height: 52px;
 
   }
+  &-list {
+    background-image: url("#{$imgpath}ProfWr.svg");
+  }
+  &-approval {
+    background-image: url("#{$imgpath}ATS.svg");
+  }
+  &-guarantee {
+    background-image: url("#{$imgpath}guarantee.svg");
+  }
 }
 
 

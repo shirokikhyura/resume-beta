@@ -94,16 +94,22 @@ body {
   display: none !important;
 
 }
+.title {
+  &-default {
+    font-size: 45px;
+    line-height: 68px;
+    font-weight: 700;
+    font-family: $rufina;
+    color: $text-black;
+    @media (max-width: 1024px) {
+      font-size: 30px;
+    }
+  }
+}
 
 .title-upper, .text-uppercase {
   text-transform: uppercase;
 
-}
-
-.btn {
-  text-decoration: none;
-  font-weight: 400;
-  outline: none;
 }
 
 .d-block {
@@ -122,14 +128,6 @@ body {
   font-weight: 600;
 }
 
-.btn-warning {
-  color: $white;
-  background-color: $bg-warning;
-  transition: color 0.2s, background-color 0.2s ease-in-out;
-  &:hover {
-    background-color: #f25218;
-  }
-}
 
 
 .text-warning {
@@ -138,12 +136,7 @@ body {
 .text-danger {
   color: $bg-danger;
 }
-.btn-default {
-  background-color: #f3f7fb;
-  color: #25466c;
-  transition: color 0.2s, background-color 0.2s ease-in-out;
 
-}
 
 
 select {
