@@ -1,0 +1,97 @@
+.uploadyour {
+  background: #F0F6FB;
+  padding-top: 60px;
+  padding-bottom: 65px;
+  &-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  &-row {
+    display: flex;
+  }
+
+  &-left {
+    width: 100%;
+    max-width: 515px;
+    flex-shrink: 0;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      left: 0;
+      width: 653px;
+      height: 567px;
+      background-size: cover;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-image: url("#{$imgpath}paper-brand.png");
+    }
+  }
+
+  &-right {
+    width: 100%;
+    padding: 0 15px;
+    &-title {
+      font-size: 21px;
+      line-height: 26px;
+      color: $text-black;
+      margin-bottom: 23px;
+    }
+    p {
+      margin-bottom: 21px;
+    }
+    ul {
+      padding: 0;
+      margin: 0 0 24px 0;
+      li {
+        padding: 8px 0 8px 30px;
+        position: relative;
+        line-height: 26px;
+        color: $text-black;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 8px;
+          left: 0;
+          width: 26px;
+          height: 26px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-image: url('#{$imgpath}plus.svg');
+        }
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(209, 17, 17, 0.1);
+        }
+      }
+    }
+  }
+  .badge {
+    padding: 11px 11px 14px 45px;
+    line-height: 23px;
+    border-radius: 8px;
+    color: $text-black;
+    position: relative;
+    margin: 0 -15px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 13px;
+      left: 16px;
+      width: 19px;
+      height: 19px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &-success {
+      background: #EEFBEC;
+      border: 1px solid rgba(106, 194, 89, 0.49);
+      &:before {
+        background-image: url("#{$imgpath}checked.svg");
+      }
+    }
+  }
+
+}
