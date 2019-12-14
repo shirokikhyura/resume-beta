@@ -128,13 +128,14 @@ body {
   font-weight: 600;
 }
 
-
-
+.text-muted {
+  color: #8997A5;
+}
 .text-warning {
-  color: $bg-warning;
+  color: $text-warning;
 }
 .text-danger {
-  color: $bg-danger;
+  color: $text-danger;
 }
 
 

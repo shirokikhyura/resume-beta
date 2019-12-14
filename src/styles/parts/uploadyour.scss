@@ -2,12 +2,35 @@
   background: #F0F6FB;
   padding-top: 60px;
   padding-bottom: 65px;
+  overflow: hidden;
+  @media (max-width: 1024px) {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
   &-title {
     font-size: 28px;
     line-height: 36px;
+    color: $text-black;
+    max-width: 287px;
+    width: 100%;
+    margin: 29px auto 17px;
+    font-weight: 700;
+    @media (max-width: 1024px) {
+      margin-top: 37px;
+    }
   }
   &-row {
     display: flex;
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse;
+    }
+  }
+  &-format {
+    line-height: 26px;
+    color: $text-black;
+    @media (max-width: 1024px) {
+      margin-bottom: 64px;
+    }
   }
 
   &-left {
@@ -15,6 +38,57 @@
     max-width: 515px;
     flex-shrink: 0;
     position: relative;
+    @media (max-width: 1024px) {
+      max-width: 375px;
+      margin: 0 auto;
+    }
+    &-upload{
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 163px;
+        height: 163px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        border: 1px solid #1AAECB;
+        box-shadow: 0px 0px 25px rgba(26, 174, 203, 0.5);
+        position: relative;
+        margin: 0 auto 19px;
+      }
+      &-input {
+        display: none;
+      }
+      &-label {
+        background: $white;
+        width: 121px;
+        height: 121px;
+        display: flex;
+        border-radius: 50%;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease-in-out;
+        &:hover, &:focus {
+          background: rgba(26, 174, 203, 0.13);
+        }
+        .icon {
+          display: flex;
+          flex-shrink: 0;
+          width: 109px;
+          height: 109px;
+          background-color: #FFFFFF;
+          border: 1px dashed #1AAECB;
+          cursor: pointer;
+          border-radius: 50%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 57px;
+
+        }
+
+      }
+    }
     &:before {
       content: '';
       position: absolute;
@@ -26,20 +100,38 @@
       background-position: 0 0;
       background-repeat: no-repeat;
       background-image: url("#{$imgpath}paper-brand.png");
+      @media (max-width: 1024px) {
+        width: 561px;
+        height: 487px;
+        left: 50%;
+        top: -23px;
+        transform: translateX(-50%);
+        margin-left: 58px;
+      }
     }
   }
 
   &-right {
     width: 100%;
     padding: 0 15px;
+    @media (max-width: 1024px) {
+      padding: 0;
+    }
     &-title {
       font-size: 21px;
       line-height: 26px;
       color: $text-black;
       margin-bottom: 23px;
+      @media (max-width: 1024px) {
+        font-size: 19px ;
+        margin-bottom: 13px;
+      }
     }
     p {
       margin-bottom: 21px;
+      @media (max-width: 1024px) {
+        margin-bottom: 13px;
+      }
     }
     ul {
       padding: 0;
@@ -74,6 +166,9 @@
     color: $text-black;
     position: relative;
     margin: 0 -15px;
+    @media (max-width: 1024px) {
+      margin: 0;
+    }
     &:before {
       content: '';
       position: absolute;

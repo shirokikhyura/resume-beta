@@ -45,14 +45,11 @@
     font-size: 20px;
     border-radius: 32px;
   }
-
   &-sm {
     padding: 20.5px 50px;
     font-size: 20px;
     border-radius: 32px;
   }
-
-
   &-link {
     font-weight: 400;
     color: $bg-primary;
@@ -89,7 +86,7 @@
     }
 
     &:focus, &.focus {
-      box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+      box-shadow: none;
     }
     &.disabled,
     &:disabled {
@@ -101,9 +98,38 @@
     &:not(:disabled):not(.disabled).active {
       color: $white;
       background-color: $bg-primary-active;
-      border-color: #005cbf;
+      border-color: $bg-primary;
       &:focus {
-        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+        box-shadow: none;
+      }
+    }
+    &-outline {
+      color: $bg-primary;
+      background-color: $white;
+      border-color: $bg-primary;
+      &:hover {
+        color: $bg-primary;
+        background-color: $white;
+        border-color: $bg-primary-active;
+      }
+
+      &:focus, &.focus {
+        box-shadow: none;
+      }
+      &.disabled,
+      &:disabled {
+        color: $bg-primary;
+        background-color: $white;
+        border-color: $bg-primary;
+      }
+      &:not(:disabled):not(.disabled):active,
+      &:not(:disabled):not(.disabled).active {
+        color: $bg-primary;
+        background-color:  $white;
+        border-color: $bg-primary;
+        &:focus {
+          box-shadow: none;
+        }
       }
     }
   }
@@ -197,32 +223,32 @@
     }
   }
   &-warning {
-    color: #212529;
+    color: $white;
     background-color: $bg-warning;
     border-color: $bg-warning;
 
     &:hover {
-      color: #212529;
+      color: $white;
       background-color: $bg-warning-hover;
-      border-color: #d39e00;
+      border-color:  $bg-warning-hover;
     }
     &:focus, &.focus {
-      box-shadow: 0 0 0 0.2rem rgba(255,193,7,.5);
+      box-shadow: none;
     }
     &.disabled,
     &:disabled {
-      color: #212529;
+      color: $white;
       background-color: $bg-warning;
       border-color: $bg-warning;
     }
 
     &:not(:disabled):not(.disabled):active,
     &:not(:disabled):not(.disabled).active {
-      color: #212529;
+      color: $white;
       background-color: $bg-warning-active;
-      border-color: #c69500;
+      border-color: $bg-warning-active;
       &:focus {
-        box-shadow: 0 0 0 0.2rem rgba(255,193,7,.5);
+        box-shadow: none;
       }
     }
   }
