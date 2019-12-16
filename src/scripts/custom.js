@@ -28,6 +28,23 @@ $(document).ready(function(){
         }
 
     });
+    $("#testimonialsSlider").owlCarousel({
+        loop: true,
+        dots: false,
+        nav: true,
+        rewind: true,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 0,
+
+            },
+            1024: {
+                items: 3,
+                margin: 48
+            }
+        }
+    })
 
 
 });

@@ -1,0 +1,42 @@
+.how-itw {
+  padding-top: 46px;
+  padding-bottom: 13px;
+  @media (max-width: 900px) {
+    padding-top: 17px;
+    padding-bottom: 4px;
+  }
+  &-title {
+    margin-bottom: 37px;
+  }
+  &-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &-item {
+    padding: 0 15px;
+    width: 100%;
+    max-width: 348px;
+    .icon {
+      width: 68px;
+      height: 68px;
+      display: inline-block;
+      margin-bottom: 21px;
+    }
+    &-title {
+      font-size: 21px;
+      line-height: 23px;
+      color: $text-black;
+      margin-bottom: 15px;
+    }
+  }
+
+  p {
+    line-height: 23px;
+    margin-bottom: 30px;
+  }
+}

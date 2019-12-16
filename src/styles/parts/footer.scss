@@ -1,0 +1,21 @@
+.footer {
+  background: $text-black;
+  &-title {
+    color: rgba(255,255,255, 0.6);
+  }
+  &-list-contacts {
+    li {
+      font-size: 13px;
+      color: #999;
+      a {
+        color: inherit;
+      }
+    }
+  }
+  &-list-links {
+    li {
+      color: $white;
+      font-size: 14px;
+    }
+  }
+}
