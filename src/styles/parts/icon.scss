@@ -97,6 +97,21 @@
   &-upload {
     background-image: url("#{$imgpath}Upload.svg");
   }
+  &-open-envelope {
+    background-image: url("#{$imgpath}open-envelope-with-letter.svg");
+    width: 94.12px;
+    height: 94.12px;
+  }
+  &-contact-pen {
+    background-image: url("#{$imgpath}contract-with-pen.svg");
+    width: 92.05px;
+    height: 104.46px;
+  }
+  &-linkedin-letters {
+    background-image: url("#{$imgpath}icon-linkedin-letters.svg");
+    width: 62.43px;
+    height: 62.06px;
+  }
 }
 
 
