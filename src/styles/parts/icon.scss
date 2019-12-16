@@ -3,7 +3,7 @@
   background-position: center;
   background-size: contain;
   &-login-btn {
-    background-image: url("#{$imgpath}Login.svg");
+    background-image: url("#{$imgpath}login.svg");
   }
   &-mob-menu {
     background-image: url("#{$imgpath}icon-mob-menu.svg");
@@ -86,16 +86,16 @@
 
   }
   &-list {
-    background-image: url("#{$imgpath}ProfWr.svg");
+    background-image: url("#{$imgpath}profWr.svg");
   }
   &-approval {
-    background-image: url("#{$imgpath}ATS.svg");
+    background-image: url("#{$imgpath}ats.svg");
   }
   &-guarantee {
     background-image: url("#{$imgpath}guarantee.svg");
   }
   &-upload {
-    background-image: url("#{$imgpath}Upload.svg");
+    background-image: url("#{$imgpath}upload.svg");
   }
   &-open-envelope {
     background-image: url("#{$imgpath}open-envelope-with-letter.svg");
