@@ -112,6 +112,15 @@
     width: 62.43px;
     height: 62.06px;
   }
+  &-resume {
+    background-image: url("#{$imgpath}getstarted.svg");
+  }
+  &-curriculum {
+    background-image: url("#{$imgpath}get_your_res.svg");
+  }
+  &-punctuality {
+    background-image: url("#{$imgpath}check_progress.svg");
+  }
 }
 
 
