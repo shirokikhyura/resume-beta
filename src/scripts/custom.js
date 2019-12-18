@@ -39,13 +39,16 @@ $(document).ready(function(){
                 margin: 0,
 
             },
+            768: {
+                items: 2,
+                margin: 18
+            },
             1024: {
                 items: 3,
                 margin: 18
             }
         }
     });
-    $("#testimonialsSlider").find('.owl-nav').removeClass('disabled');
 
 
 });

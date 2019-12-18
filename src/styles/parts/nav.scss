@@ -35,7 +35,7 @@
       padding-top: 32px;
     }
     &-btn {
-      color: $text-green;
+      color: $text-primary;
       font-size: 14px;
       line-height: 1;
       display: flex;
@@ -62,7 +62,7 @@
         box-sizing: border-box;
         border-radius: 8px;
         &:hover {
-          border-color: $text-green;
+          border-color: $text-primary;
         }
         .icon {
           width: 20px;
@@ -107,7 +107,7 @@
       }
     }
     &:hover {
-      border-color: $text-green;
+      border-color: $text-primary;
     }
   }
   .wrap-menu-sub {
@@ -154,9 +154,9 @@
           transition: inherit;
         }
         &:hover, &:focus {
-          color: $text-green;
+          color: $text-primary;
           .icon {
-            border-color: $text-green;
+            border-color: $text-primary;
           }
         }
 

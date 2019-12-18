@@ -124,6 +124,18 @@
   &-rating {
     background-image: url("#{$imgpath}five-star.svg");
   }
+  &-verified {
+    background-image: url("#{$imgpath}icon-verified.svg");
+  }
+  &-facebook {
+    background-image: url("#{$imgpath}facebook-5.svg");
+  }
+  &-sitejabber {
+    background-image: url("#{$imgpath}sitejabber.svg");
+  }
+  &-trustpilot {
+    background-image: url("#{$imgpath}trustpilot.svg");
+  }
 }
 
 
