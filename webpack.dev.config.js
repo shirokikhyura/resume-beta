@@ -26,6 +26,10 @@ module.exports = {
         rules: [
             {
                 test: /\.(png|svg|jpg|gif|ico)$/,
+                include: [
+                    path.resolve(__dirname, 'src/images'),
+                    path.resolve(__dirname, 'node_modules/owl.carousel/dist/assets/')
+                ],
                 exclude: /(\/fonts|samples)/,
                 use: [
 
@@ -81,7 +85,7 @@ module.exports = {
                 test: /\.(sa|sc|c)ss$/,
                 include: [
                     path.resolve(__dirname, 'src/styles'),
-                    // path.resolve(__dirname, '/node_modules/owl.carousel/dist/assets/owl.carousel.min.css')
+                    path.resolve(__dirname, 'node_modules/owl.carousel/dist/assets/owl.carousel.min.css')
                 ],
                 use: [
                     MiniCssExtractPlugin.loader,

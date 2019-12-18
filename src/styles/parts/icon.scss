@@ -121,6 +121,9 @@
   &-punctuality {
     background-image: url("#{$imgpath}check_progress.svg");
   }
+  &-rating {
+    background-image: url("#{$imgpath}five-star.svg");
+  }
 }
 
 

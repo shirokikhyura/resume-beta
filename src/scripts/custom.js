@@ -41,10 +41,11 @@ $(document).ready(function(){
             },
             1024: {
                 items: 3,
-                margin: 48
+                margin: 18
             }
         }
-    })
+    });
+    $("#testimonialsSlider").find('.owl-nav').removeClass('disabled');
 
 
 });
