@@ -1,7 +1,46 @@
 .footer {
   background: $text-black;
-  &-title {
-    color: rgba(255,255,255, 0.6);
+  padding-top: 55px;
+  @media (max-width: 768px) {
+    padding-top: 37px;
+  }
+  &-col {
+    @media (max-width: 768px) {
+      width: 100%;
+      &:nth-child(2), &:nth-child(3) {
+        width: 50%;
+      }
+    }
+    &-title {
+      color: #999;
+      margin-bottom: 20px;
+      line-height: 19px;
+      font-weight: 500;
+    }
+  }
+  &-logo {
+    display: block;
+    width: 156px;
+    height: 21px;
+    margin-bottom: 24px;
+  }
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      margin-bottom: 43px;
+    }
+  }
+  &-pays {
+    width: 211px;
+    height: 33px;
+    display: flex;
+    margin-top: 22px;
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
   }
   &-list-contacts {
     li {
@@ -9,13 +48,51 @@
       color: #999;
       a {
         color: inherit;
+        text-decoration: none;
+
+      }
+    }
+    &-social {
+      display: flex;
+      line-height: 1;
+      margin-top: 14px;
+      @media (max-width: 768px) {
+        margin-bottom: 47px;
+      }
+      a + a{
+        margin-left: 15px;
+        display: flex;
+      }
+      .icon {
+        display: flex;
+        flex-shrink: 0;
+        width: 22px;
+        height: 22px;
       }
     }
   }
+  &-disclaimer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 19px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 30px;
+    color: #999;
+    @media (max-width: 768px) {
+      padding-top: 9px;
+      padding-bottom: 11px;
+    }
+
+  }
   &-list-links {
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
     li {
       color: $white;
       font-size: 14px;
+      line-height: 30px;
     }
   }
 }
