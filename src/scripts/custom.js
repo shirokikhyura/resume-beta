@@ -33,6 +33,8 @@ $(document).ready(function(){
         dots: false,
         nav: true,
         rewind: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
         responsive: {
             0: {
                 items: 1,
