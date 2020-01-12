@@ -51,6 +51,9 @@ $(document).ready(function(){
             }
         }
     });
+    setTimeout(function (){
+        $("#headerHome").addClass('start-animation')},2000)
+
 
 
 });

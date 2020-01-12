@@ -3,6 +3,20 @@
     padding-bottom: 40px;
     position: relative;
     overflow-x: hidden;
+    &.start-animation {
+      .container {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    .container {
+      opacity: 0;
+      transform: translateY(0) scale(0.5);
+      transition-duration: 0.8s;
+      transition-timing-function: ease-in;
+    }
+
+
     @media (max-width: 1024px) {
       padding-bottom: 92px;
     }
@@ -76,7 +90,6 @@
         flex-direction: column;
         width: 25px;
         height: 39px;
-        animation: arrowDown 2s infinite;
         background-color: transparent;
         border: none;
         outline: none;
@@ -92,9 +105,10 @@
           width: 10px;
           height: 10px;
           display: block;
+          animation: arrowFade 1.5s infinite linear;
           &:nth-child(2) {
-            animation-delay: -0.2s;
             border-color: $text-black;
+            animation: arrowDown 1.5s infinite linear;
           }
         }
         &:hover {
@@ -107,16 +121,21 @@
     }
   }
 }
-@keyframes arrowDown {
+@keyframes arrowFade {
   0%{
     opacity: 0;
-    transform:  translate(0,-10px);
   }
-  50%{
+  100%{
     opacity: 1;
+  }
+}
+@keyframes arrowDown {
+  0%{
+    opacity: 1;
+    transform: translate(0,-10px) rotate(135deg);
   }
   100%{
     opacity: 0;
-    transform: translate(0,10px);
+    transform: translate(0,10px) rotate(135deg);
   }
 }
