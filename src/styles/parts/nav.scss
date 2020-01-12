@@ -152,11 +152,17 @@
         .icon {
           margin-left: 6px;
           transition: inherit;
+          transition-duration: 0.2s;
+          transition-property: transform;
+          transition-timing-function: ease-out;
         }
         &:hover, &:focus {
           color: $text-primary;
           .icon {
             border-color: $text-primary;
+            &-arrow-right {
+              transform: translateX(4px) rotate(45deg);
+            }
           }
         }
 
