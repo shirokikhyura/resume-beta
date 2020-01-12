@@ -51,9 +51,14 @@ $(document).ready(function(){
             }
         }
     });
+
     setTimeout(function (){
         $("#headerHome").addClass('start-animation')},2000)
 
-
+    var scrollheight = $('#headerHome').outerHeight() + $('#navbar').outerHeight();
+    $("#headerScrollBtn").on('click',function () {
+        $("html, body").animate({ scrollTop: scrollheight }, 500, 'swing');
+        return false;
+    })
 
 });
