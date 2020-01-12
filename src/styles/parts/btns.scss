@@ -8,16 +8,25 @@
   user-select: none;
   outline: none;
   border: 1px solid transparent;
-  transition: color .15s ease-in-out;
+  transition-property: transform, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transform: perspective(1px) translateZ(0);
   padding: 15.5px 62px;
   line-height: 21px;
   border-radius: 32px;
   font-size: 18px;
+
   .icon {
     height: 20px;
     width: 20px;
     margin-left: 10px;
     float: right;
+    transform: translateZ(0);
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+
   }
   &:focus,
   &.focus {
@@ -25,6 +34,10 @@
   }
   &:focus, &:hover {
     text-decoration: none;
+    transform: scale(1.02);
+    .icon {
+      transform: translateX(4px);
+    }
   }
 
   &.disabled,
