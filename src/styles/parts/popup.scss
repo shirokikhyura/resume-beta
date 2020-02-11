@@ -134,6 +134,9 @@
     line-height: 36px;
     color: $text-black;
     text-align: center;
+    &_reset {
+      text-align: left;
+    }
   }
 
   &__btn-close {
@@ -182,6 +185,10 @@
         width: 100%;
         font-size: 14px;
         padding: 0 5px;
+        &_danger {
+          border-color: $text-danger;
+          background: rgba(245, 83, 83, 0.05);
+        }
       }
       &-label {
         line-height: 30px;
@@ -196,6 +203,45 @@
       &-row {
         display: flex;
         justify-content: space-between;
+      }
+    }
+  }
+  &-thank {
+    &__icon {
+      padding-bottom: 14px;
+      padding-top: 15px;
+      display: block;
+      text-align: center;
+      .icon {
+        display: inline-block;
+      }
+    }
+    &__title {
+      color: $text-black;
+      text-align: center;
+      display: block;
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 36px;
+      padding-bottom: 8px;
+    }
+    &__text {
+      padding-bottom: 10px;
+      line-height: 19px;
+      text-align: center;
+    }
+  }
+  &-email {
+    &__title {
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 36px;
+      color: $text-black;
+      text-align: left;
+      &-sub {
+        font-size: 14px;
+        line-height: 19px;
+        padding-bottom: 4px;
       }
     }
   }

@@ -166,6 +166,11 @@
   &-linkedin {
     background-image: url("#{$imgpath}linkedin2.svg");
   }
+  &-thank {
+    width: 43px;
+    height: 43px;
+    background-image: url("#{$imgpath}checked.svg");
+  }
 
 }
 
