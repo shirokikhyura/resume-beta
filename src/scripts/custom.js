@@ -61,4 +61,23 @@ $(document).ready(function(){
         return false;
     })
 
+    function popupClose () {
+        if ($('.popup').hasClass('active')) {
+            $(".popup").removeClass('active');
+            $("body").removeClass('popup-active');
+        }
+    }
+    function popupActive() {
+        if (!$('.popup').hasClass('active')) {
+            $(".popup").addClass('active');
+            $("body").addClass('popup-active');
+        }
+    }
+    $('.popup-close').on('click', function () {
+        popupClose();
+    });
+    $('#login-btn').on('click', function () {
+        popupActive();
+    });
+
 });

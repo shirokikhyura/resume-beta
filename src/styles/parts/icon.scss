@@ -15,6 +15,11 @@
       height: 16px;
     }
   }
+  &-close {
+    background-image: url("#{$imgpath}icon-close.svg");
+    width: 14px;
+    height: 14px;
+  }
   &-arrow {
     &-right, &-left, &-down, &-up  {
       width: 10px;
@@ -59,6 +64,11 @@
     background-image: url("#{$imgpath}google.svg");
     width:  115.72px;
     height:37.89px;
+    &-sm {
+      background-image: url("#{$imgpath}goo.svg");
+      width: 18px;
+      height: 18px;
+    }
 
   }
   &-bbc {
@@ -129,6 +139,11 @@
   }
   &-facebook {
     background-image: url("#{$imgpath}facebook-5.svg");
+    &-sm {
+      background-image: url("#{$imgpath}fb.svg");
+      width: 9.73px;
+      height: 18px;
+    }
   }
   &-sitejabber {
     background-image: url("#{$imgpath}sitejabber.svg");

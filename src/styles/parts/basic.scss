@@ -7,6 +7,9 @@ body {
   color: $text-default;
   line-height: 23px;
   font-weight: 400;
+  &.popup-active {
+    overflow: hidden;
+  }
 }
 
 .container {
