@@ -124,7 +124,9 @@ module.exports = {
     },
 
     plugins: [
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin({
+            cleanStaleWebpackAssets: false
+        }),
         new BrowserSyncPlugin({
             host: 'localhost',
             port: 3000,
@@ -184,6 +186,7 @@ module.exports = {
         mainFields: ['browser', 'jsnext:main', 'main'],
 
     },
+
     target: 'web',
     watch: true
 };

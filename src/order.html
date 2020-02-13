@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume</title>
+
+    <!--    в index.php удалить и добавить -->
+    <link rel="stylesheet" href="/build/css/main_critical.css">
+    <!--    <style> <?=file_get_contents(__DIR__ . "/../web/build/home_critical.css"); ?> </style>-->
+</head>
+
+<body>
+    <div class="menu hidden">
+        <ul class="menu-list">
+            <li class="menu-list-title">Menu</li>
+            <li class="menu-list-item">
+                <button type="button" id="sub-menu-btn">Our services
+                <i class="icon icon-arrow-right"></i></button>
+                <span class="wrapper-sub-menu">
+                      <ul class="menu-list-sub">
+                    <li class="menu-list-sub-title"><button type="button" id="sub-menu-btn-back"><i
+                            class="icon icon-arrow-left"></i>Back</button></li>
+                    <li class="menu-list-sub-item"><a href="/resume_writing">Resume Writing<i
+                            class="icon icon-arrow-right"></i></a></li>
+                    <li class="menu-list-sub-item"><a href="/cv_writing">CV Writing<i class="icon icon-arrow-right"></i></a></li>
+                    <li class="menu-list-sub-item"><a href="/cover_letter">Cover Letter<i
+                            class="icon icon-arrow-right"></i></a></li>
+                    <li class="menu-list-sub-item"><a href="/writing_linkedin">Writing Linkedin<i
+                            class="icon icon-arrow-right"></i></a></li>
+                    <li class="menu-list-sub-item"><a href="/writing_our">Writing Our<i
+                            class="icon icon-arrow-right"></i></a></li>
+                    <li class="menu-list-sub-item"><a href="/packages">Packages<i class="icon icon-arrow-right"></i></a></li>
+                     </ul>
+                </span>
+            </li>
+            <li class="menu-list-item"><a href="/resume_examples">Resume Examples
+            <i class="icon icon-arrow-right"></i></a></li>
+            <li class="menu-list-item"><a href="/blog">Blog<i class="icon icon-arrow-right"></i></a></li>
+        </ul>
+    </div>
+    <div class="main-wrapper">
+        <%= _.template(require('./mockup/nav.html'))(data) %>
+            <main>
+                <form action="" class="form-order">
+                    <div class="form-order__title">
+                        Order details
+                        <span class="form-order__title-protection">Secure Checkout</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="inputEmail" class="form-control-label">Email</label>
+                        <input type="email" class="form-control-input form-control-input_danger" id="inputEmail">
+                        <!---display error message - remove class hidden --->
+                        <span class="form-control-message text-danger hidden">Email address is required</span>
+                    </div>
+                    <div class="form-control">
+                        <label for="selectService" class="form-control-label">Select service:</label>
+                        <select name="" id="selectService" class="form-control-select">
+                            <option value="1" selected>Resume Writing</option>
+                            <option value="2">Resume Writing</option>
+                            <option value="3">Resume Writing</option>
+                            <option value="4">Resume Writing</option>
+                            <option value="5">Resume Writing</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label for="selectLevel" class="form-control-label">Level: <i class="icon icon-question"></i></label>
+                        <select name="" id="selectLevel" class="form-control-select">
+                            <option value="1" selected>Entry</option>
+                            <option value="2">Entry</option>
+                            <option value="3">Entry</option>
+                            <option value="4">Entry</option>
+                            <option value="5">Entry</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label for="inputPosition" class="form-control-label">Target Position:</label>
+                        <input type="text" class="form-control-input" id="inputPosition" placeholder="For example, Sales manager, Designer etc.">
+                    </div>
+                    <div class="form-upload">
+                        <label class="form-upload__label" for="fileUpload"><i class="icon icon-upload"></i> Choose a file to upload</label>
+                        <input type="file" class="form-upload__input" id="fileUpload">
+                    </div>
+                    <div class="additional-services">
+                        <div class="additional-services__title">
+                            Additional Services:
+                        </div>
+                        <div class="additional-services__panel">
+                            <div class="additional-services__panel-row">
+                                <div class="additional-services__panel-title">LinkedIn Write-up <i class="icon icon-question"></i></div>
+                                <div class="additional-services__panel-price">
+                                    <div class="additional-services__panel-price-total">$89.00</div>
+                                    <div class="additional-services__panel-price-first">$99.00 <span class="additional-services__panel-price-first-discount">Save $10</span></div>
+                                </div>
+                            </div>
+                            <button type="button" class="additional-services__panel-btn btn btn-primary">Add to order</button>
+                        </div>
+                        <div class="additional-services__panel">
+                            <div class="additional-services__panel-row">
+                                <div class="additional-services__panel-title">LinkedIn Write-up <i class="icon icon-question"></i></div>
+                                <div class="additional-services__panel-price">
+                                    <div class="additional-services__panel-price-total">$89.00</div>
+                                    <div class="additional-services__panel-price-first">$99.00 <span class="additional-services__panel-price-first-discount">Save $10</span></div>
+                                </div>
+                            </div>
+                            <button type="button" class="additional-services__panel-btn btn btn-primary">Add to order</button>
+                        </div>
+                    </div>
+                    <div class="form-total">
+                        <div class="form-total__panel">
+                            <div class="form-total__item">
+                                <div class="form-total__item-service">Resume Writing <span class="form-total__item-service-level">Entry level</span></div>
+                                <div class="form-total__item-service-price">$129</div>
+                            </div>
+                            <div class="form-total__item">
+                                <div class="form-total__item-service">LinkedIn Write-up</div>
+                                <div class="form-total__item-service-price">$89.00<button type="button" class="form-total__item-service-btn"></button></div>
+                            </div>
+                            <div class="form-total__item">
+                                <div class="form-total__item-price-text">Order total</div>
+                                <div class="form-total__item-price">$218</div>
+                            </div>
+                        </div>
+                        <div class="form-total__discount">
+                            <div class="form-total__discount-link">Have a discount code?</div>
+                            <!--- display form - remove class hidden --->
+                            <div class="form-total__discount-form hidden">
+                                <label for="discount" class="form-total__discount-form-label">Discount code</label>
+                                <div class="form-total__discount-form-input-wrap">
+
+                                    <!---two validation mapping classes: "success" and "danger" --->
+                                    <input type="text" class="form-total__discount-form-input" id="discount">
+                                    <!--   <input type="text" class="form-total__discount-form-input success" id="discount"> -->
+                                    <!--  <input type="text" class="form-total__discount-form-input danger" id="discount"> -->
+
+                                    <!---display error message - remove class hidden --->
+                                    <div class="form-total__discount-form-message text-danger hidden">Invalid Coupon Code</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </main>
+            <%= _.template(require('./mockup/footer.html'))(data) %>
+        <%= _.template(require('./mockup/popup/popup-login.html'))(data) %>
+    </div>
+</body>
+</html>
